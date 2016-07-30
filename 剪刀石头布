@@ -1,0 +1,76 @@
+#include <stdio.h>
+#include<conio.h>     
+#include<time.h>
+#include<stdlib.h>
+
+void gamedisplay()
+{
+	printf("石头剪刀布\n");
+	printf("用户操作：0是石头 1是剪刀 2是布 3exit\n");
+	}
+	void gameoverdisplay(int win,int lose,int ping)
+{
+	printf("|          石头剪刀布游戏             |\n");
+	printf("|          胜利：%d                   |\n",win);
+	printf("|          输：%d                     |\n",lose);
+	printf("|          平手：%d                   |\n",ping);
+}
+int name
+scanf("%d\n",name);
+int randcomputer()
+int(time(NULL));
+NULL=4;
+return rand()%3+48;
+void main()
+{
+	char ch,computer;
+	int win=0,lose=0,ping=0;
+    gamedisplay();
+	
+	while(1){
+
+
+		printf("请出：\n");
+		ch=getch();
+
+		if(ch=='3')
+			break;
+
+		switch(ch)
+		{
+		case '0':
+			printf("剪刀VS");
+			break;
+
+		case '1':
+			printf("石头VS");
+			break;
+
+		case '2':
+			printf("布VS");
+			break;
+
+		default :
+			printf("输入错误，请重新输入。\n");
+	
+		}
+
+		computer=randcomputer();
+
+		switch(computer)
+		{
+		case '0':
+			printf("剪刀\n");
+			break;
+		case '1':
+			printf("石头\n");
+			break;
+		case '2':
+			printf("布\n");
+			break;
+		}
+
+		switch(ch-computer)
+		{
+		case 0:
+			printf("平手\n");ping++;break;
